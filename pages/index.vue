@@ -85,6 +85,7 @@ export default {
   methods:{
     handleJump(searchCity){
      this.$router.push(this.options[this.currentOption].url+searchCity)
+     console.log(searchCity);
     }
   }
 };

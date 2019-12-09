@@ -13,3 +13,8 @@
     background:#409eff;
     height: 1px;
 }
+
+a{
+   text-decoration: none; 
+   color: #333;
+}

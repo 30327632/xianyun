@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-07 23:07:58
+ * @LastEditTime: 2019-12-08 21:05:05
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \code\xianyun\components\user\registerForm.vue
+ -->
 <template>
   <el-form  ref="form"  class="form">
     <el-form-item class="form-item" prop="username">
@@ -32,6 +40,10 @@
 
 export default {
   data() {
+    return{
+      
+    }
+  
    
   },
   methods: {

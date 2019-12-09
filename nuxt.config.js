@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-11-30 12:25:27
- * @LastEditTime: 2019-12-07 22:32:25
+ * @LastEditTime: 2019-12-09 14:44:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\xianyun\nuxt.config.js
@@ -44,7 +44,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    { src: '@/plugins/localStorage', ssr: false }
   ],
 
   /*

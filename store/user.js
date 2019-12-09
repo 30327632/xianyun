@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-12-08 21:19:16
- * @LastEditTime: 2019-12-09 15:44:31
+ * @LastEditTime: 2019-12-09 16:12:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\xianyun\store\usei.js
@@ -29,9 +29,21 @@ export const mutations={
     }
 }
 
-export const action={
+export const actions={
     //这是用来处理异步的数据  为什么要在这里呢  为什么不
-    login({commit},data){
+    login({commit},form){
+     return this.$axios({
+            url: "/accounts/login",
+            method: "post",
+            data:form
+        }).then(res=>{
+            //登录成功之后 把数据存到state的userInfo
+            const data=res.data
+            //保存到state  commit("setUserInfo",data)
+            commit("setUserInfo",data)
+            return data
+        })
+        
 
     }
     
